@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aditya Tech Info</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:'Poppins',sans-serif;
+  background:radial-gradient(circle at 20% 20%,#000428,#004e92);
+  color:white;overflow-x:hidden;
+  padding-top:80px;
+}
+.navbar{
+  position: fixed; top:0; left:0; width:100%;
+  background-color:rgba(0,255,255,0.15);
+  display:flex;justify-content:space-between;align-items:center;
+  padding:15px 24px;border-bottom:1px solid rgba(255,255,255,0.12);
+  backdrop-filter:blur(8px); z-index:1000;
+}
+.navbar img{
+  height:48px;border-radius:6px;
+  animation: glow 2s infinite alternate;
+}
+@keyframes glow{
+  0%{filter:drop-shadow(0 0 4px aqua);}
+  50%{filter:drop-shadow(0 0 12px aqua);}
+  100%{filter:drop-shadow(0 0 20px aqua);}
+}
+.navlinks{display:flex;gap:18px;list-style:none}
+.navlinks a{text-decoration:none;color:#fff;font-weight:600;transition:.2s}
+.navlinks a:hover{color:aqua}
+section{padding:60px 20px;text-align:center}
+.hero{
+  height:85vh;display:flex;flex-direction:column;
+  justify-content:center;align-items:center;text-align:center;padding:0 20px;
+}
+.hero h1{font-size:2.6rem;color:aqua;text-shadow:0 0 12px rgba(0,255,255,0.12);margin-bottom:18px}
+.hero p{font-size:1.05rem;max-width:740px;line-height:1.7;color:#d6e6f2}
+.btn{
+  background-color:aqua;color:black;padding:10px 22px;border:none;border-radius:8px;
+  cursor:pointer;font-size:16px;margin-top:24px;text-decoration:none;font-weight:600;
+  transition:.2s;
+}
+.btn:hover{background-color:#00bcd4;color:white}
+.about, .services, .contact{
+  background-color:rgba(255,255,255,0.04);
+  margin:32px auto;border-radius:12px;padding:24px 18px;
+  max-width:920px;box-shadow:0 6px 18px rgba(0,0,0,0.35);
+  backdrop-filter:blur(6px);
+}
+.about h2, .services h2, .contact h2{color:aqua;margin-bottom:10px}
+.services ul{list-style:none;line-height:1.8;font-size:1.05rem}
+.hero .highlights{
+  margin-top:25px; display:flex; gap:12px; flex-wrap:wrap; justify-content:center;
+}
+.hero .highlights a{
+  background:rgba(0,255,255,0.2); padding:6px 12px; border-radius:12px;
+  color:white; font-weight:600; text-shadow:0 0 8px aqua; font-size:0.9rem;
+  text-decoration:none; transition:.3s;
+}
+.hero .highlights a:hover{
+  background:rgba(0,255,255,0.35); color:#000; text-shadow:0 0 10px aqua;
+}
+footer{text-align:center;padding:14px;background-color:rgba(0,255,255,0.06);
+  font-size:13px;color:#bcdfff;position:relative;margin-top:30px}
+@media (max-width:640px){ .navlinks{display:none} }
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="index.html"><img src="https://img.freepik.com/premium-vector/ak-logotype-design-company-business-logo_1123549-23.jpg" alt="Logo"></a>
+  <ul class="navlinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="https://www.instagram.com/adkumar2651" target="_blank">Instagram</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <h1>Welcome to Aditya Tech Info 🚀</h1>
+  <p>Click on your favorite phone below to go directly to its Amazon or Flipkart page, or see all phones by clicking Get Started!</p>
+  <div class="highlights">
+    <a href="https://www.amazon.in/iPhone-16-Pro-512-GB/dp/B0DGHTBK1Q" target="_blank">iPhone 16 Pro</a>
+    <a href="https://www.flipkart.com/samsung-galaxy-s24-ultra-5g-titanium-gray-512-gb/p/itm463827d6eb2be" target="_blank">Samsung S24 Ultra</a>
+    <a href="https://www.amazon.in/Google-Pixel-Pro-Obsidian-Storage/dp/B0FLQQF6YP" target="_blank">Google Pixel 9 Pro</a>
+    <a href="https://www.flipkart.com/oneplus-12-silky-black-256-gb/p/itm4464454f95a2e" target="_blank">OnePlus 12</a>
+    <a href="https://www.amazon.in/XIAOMI-14-Storage-Triple-HyperOS/dp/B0DGF1YN84">Xiaomi 14 Civi</a>
+    <a href="https://www.flipkart.com/oneplus-nord-ce5-5g-nexus-blue-256-gb/p/itm9259708fe4e3c" target="_blank">One Plus Nord CE5 5g</a>
+    <a href="https://www.flipkart.com/honor-200-5g-moonlight-white-512-gb/p/itm6c73c53970f43" target="_blank">Honor 200</a>
+    <a href="https://www.amazon.in/256GB-Storage-Additional-Exchange-Offers/dp/B0FHWFV5VS" target="_blank">Vivo V60 5g</a>
+    <a href="https://www.amazon.in/Oppo-Find-Space-Black-256/dp/B0DPT8MSJZ" target="_blank">OPPO Find X8 5g</a>
+    <a href="https://www.amazon.in/Nothing-Mediatek-Dimensity-Processor-Charging/dp/B0D714DPQ9" target="_blank">Nothing Phone(2a)</a>
+    <a href=https://www.amazon.in/realme-Smartphone-Refresh-5500mAh-Snapdragon/dp/B0F87G7HR2/ref=sr_1_1?dib=eyJ2IjoiMSJ9.gQhRt9Si37ECztUgIHjUBhesUn0f1hSkAq50iFADSbMfoGPRar8IdOm9yukjoUHeq5bgHUWhH19zz5wDBF4jf-o-l92T2RbvmBUHjF85BiZRDAjks8cIkx3aYvqweNfFt7w32bkDb564CCHWnVlLkrOmOpMJaBAX2bwS7NYm8EWLOTR79RJjnh_DdwJAhMKr3qemROdArggGDqyxFK02SR91gFBGyxmO2B0H0mBlYv4.YM7PCSOCU3uQ-l2pfKoObpzvFgBTJi0MiMsTnqeUCWw&dib_tag=se&keywords=realme%2Bgt%2B3&qid=1762508251&sr=8-1&th=1  target="_blank">Realme GT 6</a>
+    <a href="https://www.amazon.in/Samsung-Smartphone-Titanium-Snapdragon-ProVisual/dp/B0DSKMV3ZC?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&smid=AJ6SIZC8YQDZX&th=1" target="_blank">Samsung Galaxy S25 Ultra</a>
+  </div>
+  <a class="btn" href="mobiles.html">Get Started →</a>
+</section>
+
+<section class="about" id="about">
+  <h2>About Us</h2>
+  <p>Aditya Tech Info lists trending phones with direct shopping links to Amazon & Flipkart. Get specs, highlights, and buy options in one click.</p>
+</section>
+
+<section class="services" id="services">
+  <h2>Services</h2>
+  <ul>
+    <li>📱 Phone specs & highlights</li>
+    <li>🔎 Quick compare & shop links</li>
+    <li>🛒 Direct store links (Amazon / Flipkart)</li>
+  </ul>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Contact</h2>
+  <p>📞 <strong>82879 07596</strong> • 📧 adityatechinfo@gmail.com</p>
+</section>
+
+<footer>© 2025 Aditya Tech Info | All Rights Reserved</footer>
+</body>
+</html>
